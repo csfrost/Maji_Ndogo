@@ -136,7 +136,7 @@ WHERE
 -- 38 wrong description was returned.
 
 -- Query to correct the well pollution description & result column
-/*UPDATE well_pollution
+UPDATE well_pollution
 SET description =
 	CASE
 		WHEN description = 'Clean Bacteria: Giardia Lamblia'
@@ -150,7 +150,7 @@ SET description =
 		WHEN biological > 0.01
         THEN 'Contaminated: Biological'
         ELSE results
-        END*/
+        END
 -- Query to confirm that the data has been properly updated
 SELECT
 	source_id,
